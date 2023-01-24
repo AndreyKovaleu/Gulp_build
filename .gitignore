@@ -13,6 +13,7 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
@@ -26,7 +27,6 @@ yarn-debug.log*
 yarn-error.log*
 
 # my settings
-/dist
 /temp
 /package-lock.json
 info.txt

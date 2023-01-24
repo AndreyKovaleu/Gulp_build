@@ -7,8 +7,6 @@ function testWebP(elem) {
   webP.onload = webP.onerror = function () {
     webP.height === 2 ? elem.classList.add('webp') : elem.classList.add('no-webp')
   };
-
-  // console.log(webP);
 }
 
-export {testWebP};
+export { testWebP };

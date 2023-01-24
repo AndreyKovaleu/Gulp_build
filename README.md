@@ -14,6 +14,7 @@
 [gulp-file-include](https://www.npmjs.com/package/gulp-file-include) | Для сборки подключенных файлов в один файл
 [gulp-replace](https://www.npmjs.com/package/gulp-replace) | Для изменения путей к файлам
 [gulp-webp-html-nosvg](https://www.npmjs.com/package/gulp-webp-html-nosvg) | Для обработки картинок в форма WebP в файлах html, кроме формата svg
+[gulp-htmlmin](https://www.npmjs.com/package/gulp-htmlmin) | Для сжатия html файлов
 [gulp-version-number](https://www.npmjs.com/package/gulp-version-number) | Для добавления версии к файлам js/css/image
 [gulp-plumber](https://www.npmjs.com/package/gulp-plumber) | Для предотвращения прерывания потока в случае ошибки
 [gulp-notify](https://www.npmjs.com/package/gulp-notify) | Для информирования о найденных ошибках
@@ -37,6 +38,7 @@
 [gulp-svg-sprite](https://www.npmjs.com/package/gulp-svg-sprite) | Для создания спрайта из файлов svg
 [gulp-if](https://www.npmjs.com/package/gulp-if) | Для условного ветвления в режиме разработчика и продакшн
 [gulp-zip](https://www.npmjs.com/package/gulp-zip) | Для создания zip архива
+[gulp-gh-pages](https://www.npmjs.com/package/gulp-gh-pages) | Для публикации содержимого на GitHub pages
 
 ## Структура папок
 
@@ -74,6 +76,7 @@
 │   │   │   └── .js
 │   │   └── app.js
 │   ├── scss
+│   │   ├── base
 │   │   └── .scss
 │   ├── svgicons
 │   │   └── .svg
@@ -124,6 +127,7 @@
 - __build__ - сборка проекта в режиме продакшн
 - __zip__ - создание zip-архива
 - __svgSprite__ - создает svg спрайт с описанием
+- __gh-pages__ - отправка собранного проекта на GitHub pages
 
 ## Обо мне
 

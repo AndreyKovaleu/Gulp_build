@@ -4,4 +4,9 @@ const reset = () => {
   return deleteAsync(app.path.clean);
 }
 
-export { reset };
+// Удаление папки .publish после отправки на GitHub pages
+const resetPublish = () => {
+  return deleteAsync(app.path.cleanPublish);
+}
+
+export { reset, resetPublish };

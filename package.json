@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
+  "homepage": "https://AndreyKovaleu.github.io/Gulp_build",
   "type": "module",
   "scripts": {
     "dev": "gulp",
     "build": "gulp build --build",
     "zip": "gulp deployZIP --build",
-    "svgSprites": "gulp svgSprites"
+    "svgSprites": "gulp svgSprites",
+    "gh-pages": "gulp deployGHPages"
   },
   "author": "Andrey_Kovaleu",
   "license": "ISC",
@@ -21,7 +23,9 @@
     "gulp-cli": "^2.3.0",
     "gulp-file-include": "^2.3.0",
     "gulp-fonter": "^0.3.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-htmlmin": "^5.0.1",
     "gulp-if": "^3.0.0",
     "gulp-imagemin": "^8.0.0",
     "gulp-newer": "^1.4.0",

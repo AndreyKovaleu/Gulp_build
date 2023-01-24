@@ -4,6 +4,7 @@ const rootFolder = nodePath.basename(nodePath.resolve());
 
 const buildFolder = './dist';
 const srcFolder   = './src';
+const publishFolder   = './.publish';
 
 const path = {
   build: {
@@ -31,6 +32,7 @@ const path = {
     files: `${srcFolder}/files/**/*.*`
   },
   clean: buildFolder,
+  cleanPublish: publishFolder,
   buildFolder,
   srcFolder,
   rootFolder

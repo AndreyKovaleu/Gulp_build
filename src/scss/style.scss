@@ -1,8 +1,9 @@
-@import "fonts";
+@import "base/_fonts";
 
 body {
   background: url("@img/1.jpg") 0 0 no-repeat;
-  span{
+
+  span {
     color: gray;
   }
 }
@@ -12,6 +13,7 @@ body {
     font-size: 20px;
   }
 }
+
 @media (max-width: 768px) {
   body {
     background-color: green;

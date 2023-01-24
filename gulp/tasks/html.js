@@ -1,5 +1,6 @@
 import fileinclude from "gulp-file-include";
 import webpHtmlNosvg from "gulp-webp-html-nosvg";
+import htmlmin from "gulp-htmlmin";
 import versionNumber from "gulp-version-number";
 
 const html = () => {
@@ -35,6 +36,12 @@ const html = () => {
                   'file': 'gulp/version.json'
                 }
               })
+            )
+          )
+          .pipe(
+            app.plugins.if(
+              app.isBuild,
+              htmlmin({ collapseWhitespace: true })
             )
           )
           .pipe(app.gulp.dest(app.path.build.html))
